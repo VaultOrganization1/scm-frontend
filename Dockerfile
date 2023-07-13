@@ -10,7 +10,7 @@ WORKDIR /app
 COPY package*.json /app
 
 # Install dependencies
-RUN npm install -g serve
+RUN npm install
 
 # Copy the rest of the application code to the container
 COPY . /app
@@ -25,4 +25,5 @@ EXPOSE 5173
 # CMD ["npm", "run", "dev"]
 
 # Serve the built application using a static file server like serve
+RUN npm install -g serve
 CMD ["serve", "-s", "build", "-l", "5173"]
