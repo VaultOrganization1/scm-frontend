@@ -19,7 +19,7 @@ COPY . /app
 RUN npm run build
 
 # Expose the appropriate port for your React.js application
-EXPOSE 3000
+EXPOSE 5173
 
 # Define the startup command
 CMD ["npm", "run", "dev"]
