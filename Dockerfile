@@ -29,4 +29,4 @@ EXPOSE 5173
 
 # Serve the built application using a static file server like serve
 RUN npm install -g serve
-CMD ["serve", "-s", "build", "-l", "5173"]
+CMD ["serve", "-s", "-l", "5173"]
